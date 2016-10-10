@@ -1,0 +1,76 @@
+@media screen {
+    body {
+    background: url('/bg.png') top left repeat #ebeef2;
+    font: normal 14px 'Roboto',arial,sans-serif;
+    }
+
+    .layer {
+      position: absolute;
+      left: -3px;
+      right: -3px;
+      top: -3px;
+      bottom: 1px;
+      background-color: white;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 0px 5px 0px #e4e4e4;
+    }
+
+    .stack {
+      position: fixed;
+      left: 1em;
+      top: 1em;
+      right: 1em;
+      bottom: 1.8em;
+    }
+
+    .flag {
+      position: fixed;
+      right: 0px;
+      left: 0px;
+      bottom: 1em;
+      height: 0.8em;
+      text-align: center;
+      color: #aaa;
+      font-family: 'Roboto',arial,sans-serif;
+      font-size: 14px;
+    }
+
+    a:link, a:visited, a:active {
+      color: #aaa;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    *:focus {
+      outline: none;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        resize: none;
+        overflow-y: auto;
+        border-radius: 3px;
+        box-sizing: border-box;
+        border: none;
+        padding: 0.728em 1em;
+        color: #333;
+        font-size: 1.1em;
+    }
+
+    .print {
+        display: none;
+    }
+}
+
+@media print {
+    .container {
+        display: none;
+    }
+
+    .print {
+        font-size: 10px;
+    }
+}
